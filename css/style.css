@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+header{
+    background: #ffffff;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+header .container{
+    width: 1140px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background: #ffffff;
+}
+
+header .container h1{
+    font-weight: 300;
+    color: #4d6e80;
+    font-size: 36px;
+    margin-top: 10px;
+}
+
+header .container nav ul{
+   padding: 0;
+}
+
+header .container nav ul li{
+    display: inline-block;
+}
+
+header .container nav ul li a{
+    padding: 5px 18px;
+    text-decoration: none;
+    transition: .3s;
+    border: 1px solid transparent;
+    font-size: 14px;
+    color: #1f2d36;
+    font-weight: 300;
+}
+
+header .container nav ul li a:hover{
+    border: 1px solid #b3c8d4;
+}
+
+header .container nav ul li a.active{
+    border: 1px solid #b3c8d4;
+}
+
+main{
+    width: 100%;
+    position: relative;
+}
+
+main #hero{
+    width: 100%;
+    padding-top: 170px;
+    padding-bottom: 200px;
+    background: url(../img/slide.jpg);
+    /*las siguientes lineas respecto a background es la para la pocision del fondo*/
+    background-repeat: none;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    text-align: center;
+}
+
+main #hero h2{
+    font-size: 60px;
+    /*line-height sirve para entrelineado*/
+    line-height: 72px;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+main #hero p{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+main #hero button{
+    margin-top: 44px;
+    background: #f49712;
+    font-size: 17px;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 15px 50px;
+    border-radius: 40px;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    transition: .3s;
+}
+
+main #hero button:hover{
+    background: #f49712b3;
+}
+
+main #welcome{
+    width: 100%;
+    position: relative;
+    padding: 40px 0;
+}
+
+main #welcome .container{
+    width: 1140px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main #welcome .container h2{
+    font-weight: 300;
+    font-size: 36px;
+    color: #4e7b8b;
+}
+
+main #welcome .container p{
+    font-size: 18px;
+    color: #7e8487;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+main #welcome .container .row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+main #welcome .container .row .cont-c{
+    width: 238px;
+    height: 238px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #welcome .container .row .cont-c h3{
+    color: #ffffff;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+main #welcome .container .row .cont-c:nth-child(1){
+    background: url(../img/page1-img-rounded-1.png);
+}
+
+main #welcome .container .row .cont-c:nth-child(2){
+    background: url(../img/page1-img-rounded-2.png);
+}
+
+main #welcome .container .row .cont-c:nth-child(3){
+    background: url(../img/page1-img-rounded-3.png);
+}
+
+main #projects{
+    width: 100%;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    background: #f2f2f2;
+}
+
+main #projects .container{
+    width: 1140px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main #projects .container h2{
+    font-weight: 300;
+    font-size: 34px;
+    color: #4e7b8b;
+}
+
+main #projects .container p{
+    font-size: 18px;
+    color: #7e8487;
+    font-weight: 300;
+}
+
+main #projects .container .row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 34px;
+}
+
+main #projects .container .row .cont img{
+    width: 300px;
+    height: 220px;
+}
+
+main #projects button{
+    margin-top: 30px;
+    background: #f49712;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 15px 50px;
+    border-radius: 40px;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    transition: .3s;
+}
+
+main #projects button:hover{
+    background: #f49712b3;
+}
+
+footer .container{
+    width: 1140px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer .container h3{
+    font-size: 13px;
+    color: #7e8487;
+    font-weight: 200;
+}
+
+footer .container a{
+    font-size: 13px;
+    color: #7e8487;
+    font-weight: 200;
+    text-decoration: none;
+    transition: .3s;
+}
+
+footer .container a:hover{
+    text-decoration: underline;
+    color: #4e7b8b;
+}
+
+main #experts{
+    width: 100%;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    background: #ffffff;
+}
+
+main #experts .container{
+    width: 1140px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main #experts .container h2{
+    font-weight: 300;
+    font-size: 34px;
+    color: #4e7b8b;
+}
+
+/*main #experts .container .row{
+
+}*/
+
+main #experts .container .row .perf p{
+    font-size: 18px;
+    color: #7e8487;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+main #experts .container .row .perf img{
+    margin-top: 20px;
+}
+
+main #experts .container .row .perf h3{
+    font-size: 20px;
+    color: #4e7b8b;
+    margin-top: 20px;
+    font-weight: 350;
+}
+
+main #social{
+    width: 100%;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    background: url(/img/socials-bg.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;;
+}
+
+main #social .container{
+    width: 1140px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main #social .container h2{
+    font-size: 34px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+main #social .container p{
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+main #social .container .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;    
+}
+
+main #social .container .row .red img{
+    width: 42px;
+    height: 46px;
+    margin: 0 22px;
+    cursor: pointer;
+    transition: 0.2s;
+    filter: invert(1);
+}
+
+main #social .container .row .red img:hover{
+    filter: invert(0.8);
+}
+
+/*SMARTPHONE*/
+
+@media screen and (max-width:500px) and (min-width:320px){
+    header .container nav ul{
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    header .container nav ul li{
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    header .container nav ul li a{
+        display: block;
+    }
+
+    main #hero{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    
+    main #hero h2{
+        font-size: 30px;
+        /*line-height sirve para entrelineado*/
+        line-height: 50px;
+    }
+    
+    /*main #hero button{
+
+    }*/
+
+    main #welcome .container .row{
+        display: block;
+    }
+
+    main #welcome .container .row .cont-c{
+        margin: 20px auto;
+    }
+
+}
