@@ -4,11 +4,21 @@ body{
     font-family: 'Open Sans', sans-serif;
     margin: 0;
 }
+/*RESET*/
+.container{
+    width: 1140px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*RESET END*/
 
 header{
     background: #ffffff;
     padding-top: 60px;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #cfdbe0;
 }
 
 header .container{
@@ -220,35 +230,6 @@ main #projects button:hover{
     background: #f49712b3;
 }
 
-footer .container{
-    width: 1140px;
-    max-width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    background: #ffffff;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-footer .container h3{
-    font-size: 13px;
-    color: #7e8487;
-    font-weight: 200;
-}
-
-footer .container a{
-    font-size: 13px;
-    color: #7e8487;
-    font-weight: 200;
-    text-decoration: none;
-    transition: .3s;
-}
-
-footer .container a:hover{
-    text-decoration: underline;
-    color: #4e7b8b;
-}
-
 main #experts{
     width: 100%;
     position: relative;
@@ -270,10 +251,6 @@ main #experts .container h2{
     color: #4e7b8b;
 }
 
-/*main #experts .container .row{
-
-}*/
-
 main #experts .container .row .perf p{
     font-size: 18px;
     color: #7e8487;
@@ -290,58 +267,175 @@ main #experts .container .row .perf h3{
     color: #4e7b8b;
     margin-top: 20px;
     font-weight: 350;
+    position: relative;
 }
 
-main #social{
+/*main #experts .container .row .perf h3:before{
+    width: 20px;
+    height: 1px;
+    background: #4e7b8b;
+    content: "";
+    position: absolute;
+}*/
+
+footer .social{
     width: 100%;
     position: relative;
     padding-top: 50px;
     padding-bottom: 70px;
-    background: url(/img/socials-bg.jpg);
+    background: url(../img/socials-bg.jpg);
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
     background-size: cover;;
 }
 
-main #social .container{
+footer .social .container{
     width: 1140px;
     max-width: 100%;
     margin: 0 auto;
     text-align: center;
 }
 
-main #social .container h2{
+footer .social .container h2{
     font-size: 34px;
     color: #ffffff;
     font-weight: 600;
 }
 
-main #social .container p{
+footer .social .container p{
     font-size: 18px;
     color: #ffffff;
     font-weight: 300;
     line-height: 30px;
 }
 
-main #social .container .row{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 25px;    
+footer .social ul{
+    margin: 0;
+    padding: 0; 
 }
 
-main #social .container .row .red img{
-    width: 42px;
-    height: 46px;
+footer .social .container ul li{
+    display: inline-block;
+}
+
+
+footer .social .container ul li a{
+    font-size: 46px;
     margin: 0 22px;
     cursor: pointer;
     transition: 0.2s;
-    filter: invert(1);
+    color: #ffffff;
 }
 
-main #social .container .row .red img:hover{
-    filter: invert(0.8);
+footer .social .container ul li a:hover{
+    color: #f2f2f2af;
+}
+
+footer .copy h3{
+    font-size: 13px;
+    color: #7e8487;
+    font-weight: 200;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .copy a{
+    font-size: 13px;
+    color: #7e8487;
+    font-weight: 200;
+    text-decoration: none;
+    transition: .3s;
+}
+
+footer .copy a:hover{
+    text-decoration: underline;
+    color: #4e7b8b;
+}
+
+main #about{
+    width: 100%;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    background: #ffffff;
+}
+
+
+main #about .container .row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main #about .container .row .about-us{
+    width: 75%;
+    text-align: left;
+}
+
+main #about .container .row .about-us h2{
+    font-weight: 300;
+    font-size: 34px;
+    color: #4e7b8b;
+}
+
+main #about .container .row .about-us h4{
+    font-size: 18px;
+    color: #7e8487;
+    font-weight: 300;
+    margin: 0;
+}
+
+main #about .container .row .about-us p{
+    font-size: 13px;
+    color: #7e8487;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+main #about .container .row .about-us ul{
+    padding-left: 15px;
+    color: orange;
+}
+
+main #about .container .row .about-us ul li a{
+    color: #7e8487;
+    font-size: 13px;
+    font-weight: 300;
+    text-decoration: none;
+    line-height: 27px;
+}
+
+main #about .container .row .mission{
+    width: 40%;
+    text-align: left;
+}
+
+main #about .container .row .mission h2{
+    font-weight: 300;
+    font-size: 34px;
+    color: #4e7b8b;
+}
+
+main #about .container .row .mission .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+main #about .container .row .mission .row h4{
+    font-size: 18px;
+    color: #7e8487;
+    font-weight: 300;
+    margin: 0;
+    display: flex;
+}
+
+main #about .container .row .mission .row p{
+    font-size: 13px;
+    color: #7e8487;
+    font-weight: 300;
+    line-height: 22px;
 }
 
 /*SMARTPHONE*/
@@ -371,10 +465,6 @@ main #social .container .row .red img:hover{
         /*line-height sirve para entrelineado*/
         line-height: 50px;
     }
-    
-    /*main #hero button{
-
-    }*/
 
     main #welcome .container .row{
         display: block;
@@ -382,6 +472,10 @@ main #social .container .row .red img:hover{
 
     main #welcome .container .row .cont-c{
         margin: 20px auto;
+    }
+
+    main #projects .container .row{
+        display: inline;
     }
 
 }
