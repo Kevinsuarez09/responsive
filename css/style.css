@@ -62,6 +62,7 @@ header .container nav ul li a.active{
     border: 1px solid #b3c8d4;
 }
 
+/*INICIO DE INDEX*/
 main{
     width: 100%;
     position: relative;
@@ -352,25 +353,29 @@ footer .copy a:hover{
     text-decoration: underline;
     color: #4e7b8b;
 }
+/*FIN DE INDEX*/
+
+/*INICIO DE ABOUT*/
 
 main #about{
     width: 100%;
     position: relative;
-    padding-top: 30px;
-    padding-bottom: 80px;
+    padding-top: 15px;
+    padding-bottom: 50px;
     background: #ffffff;
 }
-
 
 main #about .container .row{
     width: 100%;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
 }
 
 main #about .container .row .about-us{
-    width: 75%;
+    width: 60%;
     text-align: left;
+    margin: 0 20px;
 }
 
 main #about .container .row .about-us h2{
@@ -396,6 +401,7 @@ main #about .container .row .about-us p{
 main #about .container .row .about-us ul{
     padding-left: 15px;
     color: orange;
+    text-align: left;
 }
 
 main #about .container .row .about-us ul li a{
@@ -413,30 +419,163 @@ main #about .container .row .mission{
 
 main #about .container .row .mission h2{
     font-weight: 300;
-    font-size: 34px;
+    font-size: 36px;
     color: #4e7b8b;
 }
 
-main #about .container .row .mission .row {
+main #about .container .row .missi{
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: start;
 }
 
-main #about .container .row .mission .row h4{
+main #about .container .row .missi-1{
+    margin-right: 20px;
+}
+
+main #about .container .row .missi .missi-1 h4{
     font-size: 18px;
     color: #7e8487;
     font-weight: 300;
     margin: 0;
-    display: flex;
 }
 
-main #about .container .row .mission .row p{
+main #about .container .row .missi .missi-1 p{
     font-size: 13px;
     color: #7e8487;
     font-weight: 300;
     line-height: 22px;
+    margin-top: 5px;
 }
+
+main #what{
+    width: 100%;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    background: #f2f2f2;
+}
+
+main #what .container .row{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+main #what .container .row h2{
+    font-weight: 300;
+    font-size: 36px;
+    color: #4e7b8b;
+    padding-right: 0;
+}
+
+main #what .container .row h4{
+    font-size: 18px;
+    color: #7e8487;
+    font-weight: 300;
+    margin: 0;
+}
+
+main #what .container .row p{
+    font-size: 13px;
+    color: #7e8487;
+    font-weight: 300;
+    line-height: 22px;
+    margin: 10px 0;
+}
+
+main #what .container .row .whatwe{
+    width: 55%;
+    text-align: left;
+}
+
+main #what .container .row .whatwe button{
+    margin-top: 20px;
+    background: #f49712;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    transition: .3s;
+}
+
+main #what .container .row .whatwe button:hover{
+    background: #f49712b3;
+}
+
+main #what .container .row .whatwe .cont-a{
+    text-align: left;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+main #what .container .row .uselful{
+    width: 40%;
+    text-align: left;
+}
+
+main #what .container .row ul{
+    padding: 0px;
+    margin-left: 15px;
+    color: orange;
+    text-align: left;
+}
+
+main #what .container .row ul li a{
+    color: #7e8487;
+    font-size: 13px;
+    font-weight: 300;
+    text-decoration: none;
+    line-height: 27px;
+}
+
+main #testimon{
+    width: 100%;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    background: #ffffff;
+}
+
+main #testimon .container .row{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    text-align: left;
+}
+
+main #testimon .container h2{
+    padding-left: 95px;
+    font-weight: 300;
+    font-size: 36px;
+    color: #4e7b8b;
+    text-align: left;
+}
+
+main #testimon .container .row .persona h4{
+    font-size: 18px;
+    color: #4e7b8b;
+    font-weight: 300;
+    margin: 0;
+}
+
+main #testimon .container .row .persona p{
+    font-size: 13px;
+    color: #7e8487;
+    font-weight: 300;
+    line-height: 22px;
+    margin: 10px 0;
+}
+/*FIN DE ABOUT*/
+
+
+
+
 
 /*SMARTPHONE*/
 
@@ -476,6 +615,68 @@ main #about .container .row .mission .row p{
 
     main #projects .container .row{
         display: inline;
+    }
+
+    main #about .container .row{
+        width: 100%;
+        display: inline;
+    }
+
+    main #about .container .row .about-us{
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    main #about .container .row .mission{
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+    
+    main #about .container .row .missi{
+        display: inline;
+        text-align: center;
+        margin: 10px;
+        
+    }
+
+    main #about .container .row .missi-1{
+        margin-bottom: 30px;
+    }
+
+    main #about .container .row .missi-1 img{
+        transform: scale(1.7);
+        margin-bottom: 10px;
+    }
+
+    main #what .container .row{
+        width: 100%;
+        margin: 0 auto;
+        display: inline;
+    }
+
+    main #what .container .row .whatwe{
+        width: 100%;
+        text-align: center;
+    }
+
+    main #what .container .row .whatwe .cont-a img{
+        transform: scale(1.2);
+        margin: 20px 0;
+    }
+
+    main #what .container .row ul{
+        padding: 0px;
+        margin-left: 70px;
+        color: orange;
+        text-align: left;
+    }
+    
+    main #testimon .container .row{
+        width: 100%;
+        display: inline;
+        text-align: center;
     }
 
 }
