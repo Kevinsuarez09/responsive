@@ -94,13 +94,13 @@ main #hero h2{
 }
 
 main #hero p{
-    position: relative;
+    /*position: relative;*/
     color: #ffffff;
     font-weight: 600;
     font-size: 15px;
 }
 
-main #hero p::before{
+/*main #hero p::before{
     position: absolute;
     content: "";
     width: 140px;
@@ -118,7 +118,7 @@ main #hero p::after{
     background: #cfdbe0;
     top: 10px;
     left: 69%;
-}
+}*/
 
 main #hero button{
     margin-top: 44px;
@@ -292,10 +292,10 @@ main #experts .container .row .perf h3{
     color: #4e7b8b;
     margin-top: 20px;
     font-weight: 350;
-    position: relative;
+    /*position: relative;*/
 }
 
-main #experts .container .row .perf h3::before{
+/*main #experts .container .row .perf h3::before{
     position: absolute;
     content: "";
     width: 32px;
@@ -313,7 +313,7 @@ main #experts .container .row .perf h3::after{
     background: #cfdbe0;
     top: 13px;
     left: 58%;
-}
+}*/
 
 main #experts .container .row .perf button{
     background: #f49712;
