@@ -14,6 +14,7 @@ body{
 
 /*RESET END*/
 
+/*INICIO HEADER*/
 header{
     background: #ffffff;
     padding-top: 60px;
@@ -61,6 +62,8 @@ header .container nav ul li a:hover{
 header .container nav ul li a.active{
     border: 1px solid #b3c8d4;
 }
+/*FIN HEADER*/
+
 
 /*INICIO DE INDEX*/
 main{
@@ -91,9 +94,30 @@ main #hero h2{
 }
 
 main #hero p{
+    position: relative;
     color: #ffffff;
     font-weight: 600;
     font-size: 15px;
+}
+
+main #hero p::before{
+    position: absolute;
+    content: "";
+    width: 140px;
+    height: 1px;
+    background: #cfdbe0;
+    top: 10px;
+    left: 15%;
+}
+
+main #hero p::after{
+    position: absolute;
+    content: "";
+    width: 140px;
+    height: 1px;
+    background: #cfdbe0;
+    top: 10px;
+    left: 69%;
 }
 
 main #hero button{
@@ -271,13 +295,40 @@ main #experts .container .row .perf h3{
     position: relative;
 }
 
-/*main #experts .container .row .perf h3:before{
-    width: 20px;
-    height: 1px;
-    background: #4e7b8b;
-    content: "";
+main #experts .container .row .perf h3::before{
     position: absolute;
-}*/
+    content: "";
+    width: 32px;
+    height: 1px;
+    background: #cfdbe0;
+    top: 13px;
+    left: 38%;
+}
+
+main #experts .container .row .perf h3::after{
+    position: absolute;
+    content: "";
+    width: 32px;
+    height: 1px;
+    background: #cfdbe0;
+    top: 13px;
+    left: 58%;
+}
+
+main #experts .container .row .perf button{
+    background: #f49712;
+    padding: 8px 30px;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    transition: .3s;
+    margin-right: 5px;
+    text-align: center;
+}
+
+main #experts .container .row .perf button:hover{
+    background: #f49712b3;
+}
 
 footer .social{
     width: 100%;
@@ -356,7 +407,6 @@ footer .copy a:hover{
 /*FIN DE INDEX*/
 
 /*INICIO DE ABOUT*/
-
 main #about{
     width: 100%;
     position: relative;
@@ -552,10 +602,17 @@ main #testimon .container .row{
 main #testimon .container h2{
     padding-left: 95px;
     font-weight: 300;
-    font-size: 36px;
+    font-size: 34px;
     color: #4e7b8b;
     text-align: left;
+    margin-bottom: 15px;
 }
+
+main #testimon .container .row .persona{
+    width: 280px;
+    margin: 0 auto;
+}
+
 
 main #testimon .container .row .persona h4{
     font-size: 18px;
@@ -571,14 +628,216 @@ main #testimon .container .row .persona p{
     line-height: 22px;
     margin: 10px 0;
 }
+
+main #testimon .container .row .persona p::before{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url(../img/blockquote-bg.gif) no-repeat;
+    top: 18px;
+    left: -20px;
+}
 /*FIN DE ABOUT*/
+
+/*INICIO DE SERVICIES*/
+main #main{
+    width: 100%;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background: #ffffff;
+}
+
+main #main h2{
+    width: 90%;
+    font-weight: 300;
+    font-size: 36px;
+    color: #4e7b8b;
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 0;
+}
+
+main #main .row{
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    text-align: left;
+}
+
+main #main .row .service{
+    width: 300px;
+    text-align: left;
+    margin: 20px 10px;
+}
+
+main #main .row .service span{
+    display: block;
+    float: left;
+    margin-right: 16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background: #4b7b99;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 5px;
+}
+
+main #main .row .service h3{
+    font-size: 18px;
+    color: #7e8487;
+    font-weight: 300;
+    margin: 0;
+}
+
+main #main .row .service p{
+    font-size: 13px;
+    color: #7e8487;
+    font-weight: 300;
+    line-height: 22px;
+    margin: 0;
+}
+
+main #specialized{
+    width: 100%;
+    position: relative;
+    padding-top: 58px;
+    padding-bottom: 80px;
+    background: #f2f2f2;
+}
+
+main #specialized h2{
+    font-weight: 300;
+    font-size: 36px;
+    color: #4e7b8b;
+    text-align: left;
+    margin-top: 0;
+    margin-left: 70px;
+}
+
+main #specialized .row{
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    text-align: left;
+}
+
+main #specialized .row .special h4{
+    font-size: 18px;
+    color: #7e8487;
+    font-weight: 300;
+    margin: 0;
+    margin-top: 15px;
+}
+
+main #specialized .row .special p{
+    font-size: 13px;
+    color: #7e8487;
+    font-weight: 300;
+    line-height: 22px;
+    margin: 0;
+}
+
+main #specialized .row .special ul{
+    padding: 0px;
+    margin-left: 15px;
+    color: orange;
+    text-align: left;
+}
+
+main #specialized .row .special ul li a{
+    color: #7e8487;
+    font-size: 13px;
+    font-weight: 300;
+    text-decoration: none;
+    line-height: 27px;
+}
+/*FIN DE SERVICIES*/
+
+/*INICIO PROJECTS*/
+main #Project{
+    width: 100%;
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    background: #ffffff;
+}
+
+main #Project h2{
+    font-weight: 300;
+    font-size: 34px;
+    color: #4e7b8b;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10%;
+}
+
+main #Project .row{
+    width: 85%;
+    display: flex;
+    margin: 0 auto;
+    text-align: left;
+}
+
+main #Project .row .Project{
+    width: 300px;
+    text-align: left;
+    margin: 12px 10px;
+}
+
+main #Project .row .Project img{
+    width: 300px;
+    height: 215px;
+}
+
+main #Project .row .Project .text{
+    padding: 15px 20px 26px 20px;
+    border: 1px solid #d1d4d6;
+    border-top: 0;
+    margin: 0;
+}
+
+main #Project .row .Project .text h4{
+    margin: 0;
+}
+
+main #Project .row .Project .text h4 a{
+    font-size: 18px;
+    color: #7e8487;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+main #Project .row .Project .text p{
+    font-size: 13px;
+    color: #7e8487;
+    font-weight: 300;
+    line-height: 20px;
+}
+/*FIN PROJECTS*/
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 
 /*SMARTPHONE*/
-
 @media screen and (max-width:500px) and (min-width:320px){
     header .container nav ul{
         width: 80%;
@@ -679,4 +938,22 @@ main #testimon .container .row .persona p{
         text-align: center;
     }
 
+    main #main .row{
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    main #specialized .row{
+        width: 85%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    main #Project .row{
+        width: 85%;
+        display: inline-block;
+        margin: 0 auto;
+        text-align: center;
+    }
 }
