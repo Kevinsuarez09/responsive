@@ -956,4 +956,12 @@ main #Project .row .Project .text p{
         margin: 0 auto;
         text-align: center;
     }
+    
+    footer .social .container ul li a{
+        font-size: 38px;
+        margin: 0 22px;
+        cursor: pointer;
+        transition: 0.2s;
+        color: #ffffff;
+    }
 }
